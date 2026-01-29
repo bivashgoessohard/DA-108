@@ -48,10 +48,10 @@ while True:
         print("Congratulations! Password is strong.")
 
     elif length >= 6 and ((has_upper + has_lower + has_digit + has_special) >= 3):
-        print("Password is moderate.")
+        print("Password is moderate. Try to make it stronger.")
 
     else:
-        print("Password is weak.")
+        print("Password is weak. Try again.")
 
 
     print("======Password strength analysis======")
@@ -60,6 +60,8 @@ while True:
     print(f"Lowercase letters: {lower_count}")
     print(f"Digits: {digit_count}")
     print(f"Special characters: {special_count}")
+
+    print(f"Password history: {password_history}")
 
     if length >= 8 and has_upper and has_lower and has_digit and has_special:
         break
